@@ -53,7 +53,7 @@ export default function Home() {
                 R$ 35,00
               </p>
 
-              <button data-testid="add-to-cart-button" className="w-full mt-4 bg-gray-900 text-white py-2 rounded-lg group-hover:bg-purple-600 transition">
+              <button data-testid="add-to-cart-button" className="w-full mt-4 bg-gray-900 text-white py-2 rounded-lg hover:bg-purple-600 transition">
                 Ver detalhes
               </button>
             </div>
@@ -65,7 +65,7 @@ export default function Home() {
               </div>
               <h3 className="text-lg font-bold text-gray-700">Camiseta Algodão Premium</h3>
               <p className="text-purple-600 font-bold text-xl mt-2">R$ 55,00</p>
-              <button className="w-full mt-4 bg-gray-900 text-white py-2 rounded-lg group-hover:bg-purple-600 transition">
+              <button className="w-full mt-4 bg-gray-900 text-white py-2 rounded-lg hover:bg-purple-600 transition">
                 Ver detalhes
               </button>
             </div>
@@ -77,7 +77,7 @@ export default function Home() {
               </div>
               <h3 className="text-lg font-bold text-gray-700">Planner 2026</h3>
               <p className="text-purple-600 font-bold text-xl mt-2">R$ 45,00</p>
-              <button className="w-full mt-4 bg-gray-900 text-white py-2 rounded-lg group-hover:bg-purple-600 transition">
+              <button className="w-full mt-4 bg-gray-900 text-white py-2 rounded-lg hover:bg-purple-600 transition">
                 Ver detalhes
               </button>
             </div>
