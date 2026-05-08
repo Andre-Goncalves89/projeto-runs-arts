@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* O código abaixo é só para testarmos se o arquivo está sendo lido */
+body {
+  background-color: red !important;
+}
