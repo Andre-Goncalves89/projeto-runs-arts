@@ -17,9 +17,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          # Adicionar cache ajuda a evitar erros de rede no npm install
+          cache: 'npm'
+          cache-dependency-path: frontend/package-lock.json
 
       - name: Install Dependencies
-        working-directory: ./frontend
+        # Removido o ./ para evitar confusão de path no ambiente Linux do GitHub
+        working-directory: frontend
         run: npm install
 
       - name: Run Cypress Tests
