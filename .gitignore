@@ -1,0 +1,14 @@
+# Dependências
+node_modules/
+
+# Next.js (Frontend)
+.next/
+out/
+
+# Cypress (QA)
+cypress/videos/
+cypress/screenshots/
+
+# Ambiente e Logs
+.env*
+npm-debug.log*
