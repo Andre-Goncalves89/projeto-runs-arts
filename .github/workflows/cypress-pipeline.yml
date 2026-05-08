@@ -1,4 +1,4 @@
-name: E2E Tests - Runs Arts Store QA
+name: E2E Tests - Runs Arts QA
 
 on:
   push:
@@ -25,7 +25,7 @@ jobs:
       - name: Run Cypress Tests
         uses: cypress-io/github-action@v6
         with:
-          working-directory: ./frontend
+          working-directory: frontend
           start: npm run dev
           wait-on: 'http://localhost:3000'
-          wait-on-timeout: 120 # Aguarda até 2 minutos o servidor subir
+          wait-on-timeout: 120
