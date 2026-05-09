@@ -122,6 +122,58 @@ export default function Home() {
 
           </div>
         </section>
+        {/* Footer Completo Horizontal */}
+        <footer className="w-full bg-cinza-grafite text-bege-aveia py-12 mt-20">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 border-b border-bege-aveia/10 pb-10">
+
+              <div className="max-w-xs">
+                <h3 className="text-2xl font-bold mb-3">Run Cards</h3>
+                <p className="text-sm opacity-70 leading-relaxed">
+                  Pequenos detalhes, grandes memórias. Produtos feitos com carinho para eternizar momentos.
+                </p>
+              </div>
+
+              <div className="flex gap-12">
+                <div>
+                  <h4 className="font-bold mb-4 uppercase text-xs tracking-widest text-dourado-suave">Navegação</h4>
+                  <ul className="space-y-2 text-sm opacity-80">
+                    <li><a href="#" className="hover:text-dourado-suave transition">Início</a></li>
+                    <li><a href="#" className="hover:text-dourado-suave transition">Produtos</a></li>
+                    <li><a href="#" className="hover:text-dourado-suave transition">Sobre nós</a></li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="font-bold mb-4 uppercase text-xs tracking-widest text-dourado-suave">Contato</h4>
+                  <p className="text-sm opacity-80 mb-1">Itaim Paulista, São Paulo - SP</p>
+                  <p className="text-sm opacity-80 font-medium">WhatsApp: (11) 99709-2920</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div className="pt-8 text-center text-xs opacity-40">
+              © 2026 Run Cards - Todos os direitos reservados.
+            </div>
+          </div>
+        </footer>
+
+        {/* Botão Flutuante WhatsApp - Posicionado acima do Footer */}
+        <a
+          href="https://wa.me/5511999999999"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="fixed bottom-10 right-10 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all z-50 flex items-center justify-center group"
+          title="Fale Conosco no WhatsApp"
+        >
+          <span className="absolute right-full mr-3 bg-white text-gray-800 text-xs py-1 px-3 rounded-lg shadow-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+            Dúvidas? Chame aqui!
+          </span>
+          <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.438 9.889-9.886.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.89 4.44-9.892 9.886 0 2.125.593 3.73 1.594 5.396l-.979 3.574 3.676-.962z" />
+          </svg>
+        </a>
       </main>
     </div>
   );
