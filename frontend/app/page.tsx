@@ -31,56 +31,95 @@ export default function Home() {
 
       {/* Hero Section para o QA testar */}
       <main className="flex flex-col items-center justify-center mt-20 px-4 text-center">
-        <h1 className="text-5xl font-extrabold text-gray-900 mb-4">Personalize Store</h1>
+        <h1 className="text-4xl font-bold text-azul-lunar-medio mb-4">
+          Personalize Store
+        </h1>
         <p className="text-xl text-gray-600 max-w-2xl">
           Bem-vindo ao projeto Runs Arts! Transformando ideias em presentes únicos.
         </p>
         <section className="max-w-6xl mx-auto px-4 py-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Nossos Destaques</h2>
+          <h2 className="text-3xl font-bold text-cinza-grafite mb-10 text-center">Nossos Destaques</h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Card Produto 1 */}
-            <div data-testid="product-card" className="bg-white p-4 rounded-2xl shadow-md hover:shadow-lg transition border border-gray-100 group">
-              <div className="h-64 bg-purple-50 rounded-xl mb-4 flex items-center justify-center">
-                <span className="text-purple-300 font-medium">Imagem do Produto</span>
+
+            {/* Card 1: Caneca */}
+            <div data-testid="product-card" className="bg-white p-6 rounded-2xl shadow-sm border border-azul-lunar-claro/30 transition-all duration-300">
+              <div className="h-64 rounded-xl mb-4 overflow-hidden flex items-center justify-center bg-azul-lunar-claro/10">
+                <img
+                  src="/images/caneca-runs-arts.webp"
+                  alt="Caneca Personalizada"
+                  className="w-full h-full object-cover"
+                />
               </div>
 
-              <h3 data-testid="product-name" className="text-lg font-bold text-gray-700">
+              <h3 data-testid="product-name" className="text-xl font-bold text-cinza-grafite mb-2">
                 Caneca Alça Colorida
               </h3>
 
-              <p data-testid="product-price" className="text-purple-600 font-bold text-xl mt-2">
+              <p data-testid="product-price" className="text-dourado-suave font-black text-2xl">
                 R$ 35,00
               </p>
 
-              <button data-testid="add-to-cart-button" className="w-full mt-4 bg-gray-900 text-white py-2 rounded-lg hover:bg-purple-600 transition">
+              <button
+                data-testid="add-to-cart-button"
+                className="w-full mt-6 bg-azul-lunar-medio text-white py-3 rounded-lg font-bold hover:bg-cinza-grafite transition-colors duration-300 cursor-pointer"
+              >
                 Ver detalhes
               </button>
             </div>
 
-            {/* Card Produto 2 */}
-            <div data-testid="product-card" className="bg-white p-4 rounded-2xl shadow-md hover:shadow-lg transition border border-gray-100 group">
-              <div className="h-64 bg-purple-50 rounded-xl mb-4 flex items-center justify-center">
-                <span className="text-purple-300 font-medium">Camiseta Estampada</span>
+            {/* Card 2: Camiseta */}
+            <div data-testid="product-card" className="bg-white p-6 rounded-2xl shadow-sm border border-azul-lunar-claro/30 transition-all duration-300">
+              <div className="h-64 rounded-xl mb-4 overflow-hidden flex items-center justify-center bg-azul-lunar-claro/10">
+                <img
+                  src="/images/camisa-runs-arts.webp"
+                  alt="Camiseta Algodão Premium"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <h3 className="text-lg font-bold text-gray-700">Camiseta Algodão Premium</h3>
-              <p className="text-purple-600 font-bold text-xl mt-2">R$ 55,00</p>
-              <button className="w-full mt-4 bg-gray-900 text-white py-2 rounded-lg hover:bg-purple-600 transition">
+
+              <h3 data-testid="product-name" className="text-xl font-bold text-cinza-grafite mb-2">
+                Camiseta Algodão Premium
+              </h3>
+
+              <p data-testid="product-price" className="text-dourado-suave font-black text-2xl">
+                R$ 55,00
+              </p>
+
+              <button
+                data-testid="add-to-cart-button"
+                className="w-full mt-6 bg-azul-lunar-medio text-white py-3 rounded-lg font-bold hover:bg-cinza-grafite transition-colors duration-300 cursor-pointer"
+              >
                 Ver detalhes
               </button>
             </div>
 
-            {/* Card Produto 3 */}
-            <div data-testid="product-card" className="bg-white p-4 rounded-2xl shadow-md hover:shadow-lg transition border border-gray-100 group">
-              <div className="h-64 bg-purple-50 rounded-xl mb-4 flex items-center justify-center">
-                <span className="text-purple-300 font-medium">Caderno Argolado</span>
+            {/* Card 3: Papelaria */}
+            <div data-testid="product-card" className="bg-white p-6 rounded-2xl shadow-sm border border-azul-lunar-claro/30 transition-all duration-300">
+              <div className="h-64 rounded-xl mb-4 overflow-hidden flex items-center justify-center bg-azul-lunar-claro/10">
+                <img
+                  src="/images/planner-runs-arts.webp"
+                  alt="Papelaria Criativa - Planner"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <h3 className="text-lg font-bold text-gray-700">Planner 2026</h3>
-              <p className="text-purple-600 font-bold text-xl mt-2">R$ 45,00</p>
-              <button className="w-full mt-4 bg-gray-900 text-white py-2 rounded-lg hover:bg-purple-600 transition">
+
+              <h3 data-testid="product-name" className="text-xl font-bold text-cinza-grafite mb-2">
+                Planner 2026
+              </h3>
+
+              <p data-testid="product-price" className="text-dourado-suave font-black text-2xl">
+                R$ 45,00
+              </p>
+
+              <button
+                data-testid="add-to-cart-button"
+                className="w-full mt-6 bg-azul-lunar-medio text-white py-3 rounded-lg font-bold hover:bg-cinza-grafite transition-colors duration-300 cursor-pointer"
+              >
                 Ver detalhes
               </button>
             </div>
+
           </div>
         </section>
       </main>

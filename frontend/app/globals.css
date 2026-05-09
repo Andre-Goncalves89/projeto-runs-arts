@@ -1,6 +1,17 @@
 @import "tailwindcss";
 
-/* O código abaixo é só para testarmos se o arquivo está sendo lido */
-body {
-  background-color: red !important;
+@theme {
+  --color-bege-aveia: #EDE3D9;
+  --color-azul-lunar-claro: #BFCDD1;
+  --color-azul-lunar-medio: #8FA79B;
+  --color-cinza-grafite: #4A4C47;
+  --color-dourado-suave: #CEA45C;
+}
+
+/* Forçando o Tailwind a aplicar as variáveis no Body */
+@layer base {
+  body {
+    @apply bg-bege-aveia text-cinza-grafite m-0 p-0;
+    font-family: Arial, Helvetica, sans-serif; /* Ou a fonte da Thainá */
+  }
 }
