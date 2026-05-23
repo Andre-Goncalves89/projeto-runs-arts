@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="min-h-screen bg-bege-aveia">
+    <div className="min-h-screen">
       {/* Header / Navbar - Novo Azul Lunar */}
       <header className="bg-[#5B809B] text-white shadow-md sticky top-0 z-40">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
@@ -40,7 +40,7 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             
             {/* Card 1: Caneca */}
-            <div data-testid="product-card" className="bg-white p-6 rounded-2xl shadow-sm border border-azul-lunar-claro/30 transition-all duration-300 hover:shadow-md">
+            <div data-testid="product-card" className="bg-cinza-gelo p-6 rounded-2xl shadow-sm border border-azul-lunar-claro/30 transition-all duration-300 hover:shadow-md">
               <div className="h-64 rounded-xl mb-6 overflow-hidden flex items-center justify-center bg-azul-lunar-claro/10">
                 <img 
                   src="/images/caneca-runs-arts.webp" 
@@ -55,7 +55,7 @@ export default function Home() {
             </div>
 
             {/* Card 2: Camiseta */}
-            <div data-testid="product-card" className="bg-white p-6 rounded-2xl shadow-sm border border-azul-lunar-claro/30 transition-all duration-300 hover:shadow-md">
+            <div data-testid="product-card" className="bg-cinza-gelo p-6 rounded-2xl shadow-sm border border-azul-lunar-claro/30 transition-all duration-300 hover:shadow-md">
               <div className="h-64 rounded-xl mb-6 overflow-hidden flex items-center justify-center bg-azul-lunar-claro/10">
                 <img 
                   src="/images/camisa-runs-arts.webp" 
@@ -70,7 +70,7 @@ export default function Home() {
             </div>
 
             {/* Card 3: Papelaria */}
-            <div data-testid="product-card" className="bg-white p-6 rounded-2xl shadow-sm border border-azul-lunar-claro/30 transition-all duration-300 hover:shadow-md">
+            <div data-testid="product-card" className="bg-cinza-gelo p-6 rounded-2xl shadow-sm border border-azul-lunar-claro/30 transition-all duration-300 hover:shadow-md">
               <div className="h-64 rounded-xl mb-6 overflow-hidden flex items-center justify-center bg-azul-lunar-claro/10">
                 <img 
                   src="/images/planner-runs-arts.webp" 

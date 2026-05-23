@@ -1,7 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bege-aveia: #EDE3D9;
+  /* Tom off-white elegante, quase branco, que serve de fundo */
+  --color-bege-aveia: #F7F7F5; 
+  
+  /* Branco gelo / cinza sutil para destacar os cards do fundo */
+  --color-cinza-gelo: #EBECEF; 
+
   --color-azul-lunar-claro: #BFCDD1;
   --color-azul-lunar-medio: #8FA79B;
   --color-cinza-grafite: #4A4C47;
