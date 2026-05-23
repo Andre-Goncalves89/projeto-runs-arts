@@ -11,10 +11,10 @@ export default function Home() {
 
           {/* Navegação Minimalista */}
           <nav className="hidden md:flex space-x-8 font-medium">
-            <a href="#" className="hover:text-bege-aveia transition">Início</a>
-            <a href="#" className="hover:text-bege-aveia transition">Loja</a>
-            <a href="#" className="hover:text-bege-aveia transition">Sobre nós</a>
-            <a href="#" className="hover:text-bege-aveia transition">Contato</a>
+            <a href="#" className="hover:text-bege-aveia transition" data-test="menu-inicio">Início</a>
+            <a href="#" className="hover:text-bege-aveia transition" data-test="menu-loja">Loja</a>
+            <a href="#" className="hover:text-bege-aveia transition" data-test="menu-sobre-nos">Sobre nós</a>
+            <a href="#" className="hover:text-bege-aveia transition" data-test="menu-contato">Contato</a>
           </nav>
 
           {/* Espaçador para manter o equilíbrio sem o carrinho */}

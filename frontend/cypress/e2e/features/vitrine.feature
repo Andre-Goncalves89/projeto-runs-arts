@@ -6,12 +6,11 @@ Funcionalidade: Vitrine da Runs Arts
 
   Cenário: Visualizar produtos na página inicial
     Dado que acesso a página principal de Runs Arts
-    Então devo ver o título "Personalize Store"
-
-  Cenário: Validar a exibição do menu dropdown de produtos
+    Então devo ver a mensagem "Pequenos detalhes, grandes memórias."
+  Cenário: Validar a exibição do menu de produtos
     Dado que acesso a página principal de Runs Arts
-    Quando passo o mouse sobre o menu "Produtos"
-    Então devo visualizar as opções "Canecas", "Camisetas" e "Papelaria"
+    Quando passo o mouse pelos ítens do menu
+    Então devo visualizar as opções "Início", "Loja", "Sobre nós" e "Contato"
 
   Cenário: Validar a renderização dos cards de produtos
     Dado que acesso a página principal de Runs Arts
